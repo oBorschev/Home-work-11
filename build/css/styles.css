@@ -523,7 +523,7 @@ template {
   font-family: "Kaushan Script";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/Kaushan/kaushan-script-v7-latin-regular.woff") format("woff");
+  src: url('../fonts/Kaushan/kaushan-script-v7-latin-regular.woff') format("woff");
 
   /* Modern Browsers */
 }
@@ -534,7 +534,7 @@ template {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/Montserrat/montserrat-v12-latin-regular.woff") format("woff");
+  src: url('../fonts/Montserrat/montserrat-v12-latin-regular.woff') format("woff");
 
   /* Modern Browsers */
 }
@@ -545,7 +545,7 @@ template {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/Montserrat/montserrat-v12-latin-700.woff") format("woff");
+  src: url('../fonts/Montserrat/montserrat-v12-latin-700.woff') format("woff");
 
   /* Modern Browsers */
 }
@@ -556,7 +556,7 @@ template {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  src: url("../fonts/Roboto/roboto-v18-latin-300.woff") format("woff");
+  src: url('../fonts/Roboto/roboto-v18-latin-300.woff') format("woff");
 }
 
 /* roboto-regular - latin */
@@ -565,7 +565,7 @@ template {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/Roboto/roboto-v18-latin-regular.woff") format("woff");
+  src: url('../fonts/Roboto/roboto-v18-latin-regular.woff') format("woff");
 }
 
 /* HEADER */
