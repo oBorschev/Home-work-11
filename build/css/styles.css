@@ -125,10 +125,8 @@ figure,
 
 html {
   line-height: 1.15;
-
   /* 1 */
   -webkit-text-size-adjust: 100%;
-
   /* 2 */
 }
 
@@ -670,8 +668,7 @@ figure,
 }
 
 .wrapper-header {
-  background-image: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)),
-    url("../images/Layer 15.png");
+  background-image: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url("../images/Layer 15.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
