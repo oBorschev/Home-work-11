@@ -1,0 +1,67 @@
+/* SECTION */
+@import "../libs/vars";
+@import "../libs/utils";
+
+.section-services {
+  padding-top: 4.6rem;
+  margin-bottom: 5rem;
+}
+
+.section-services__title {
+  @extend %title-font;
+  @extend %color-dark;
+  margin-bottom: 2.3rem;
+  font-size: 2.4rem;
+}
+
+.services-list {
+  @extend %list;
+  @extend %margin;
+}
+
+.services-list__items {
+  width: 38.1rem;
+
+  &:not(:nth-child(n + 4)) {
+    margin-bottom: 5.6rem;
+  }
+}
+
+.services-item__title {
+  @extend %text-upper;
+  @extend %color-dark;
+  @extend %font-bold;
+  @extend %margin;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  font-family: $main-font;
+}
+
+.section-services__header {
+  @extend %main-font;
+  @extend %color-dark;
+  @extend %font-bold;
+  @extend %text-upper;
+  margin-bottom: 6.5rem;
+  font-size: 3rem;
+
+  &::after {
+    content: "";
+    border-bottom: 3px solid #f38181;
+    display: block;
+    width: 60px;
+    margin: 0 auto;
+    margin-top: 4.3rem;
+  }
+}
+
+.services-item__text {
+  @extend %descr-font;
+  @extend %margin;
+}
+
+.services-item--svg {
+  width: 3.2rem;
+  height: 3.2rem;
+  fill: $color-blue;
+}

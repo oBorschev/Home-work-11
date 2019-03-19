@@ -1,0 +1,225 @@
+/* SECTION-CARD */
+@import "../libs/vars";
+@import "../libs/utils";
+
+.section-card {
+  padding-top: 4.6rem;
+  margin-bottom: 8.3rem;
+}
+
+.section-card__title {
+  @extend %title-font;
+  margin-bottom: 2.3rem;
+}
+
+.section-card__header {
+  @extend %main-font;
+  @extend %font-bold;
+  @extend %text-upper;
+  margin-bottom: 4.5rem;
+
+  &::after {
+    content: "";
+    border-bottom: 3px solid $color-red;
+    display: block;
+    width: 60px;
+    margin: 0 auto;
+    margin-top: 4.3rem;
+  }
+}
+
+.sectio-card__descr {
+  @extend %descr-font;
+  @extend %margin;
+}
+
+.section-card__list {
+  @extend %list;
+  @extend %margin;
+  margin-top: 9.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.section-card__items {
+  position: relative;
+
+  &:hover .overlay {
+    display: block;
+    left: -10px;
+    top: -10px;
+  }
+
+  &:hover .section-card__items--image {
+    -webkit-box-shadow: #95e1d3 10px 10px;
+    box-shadow: #95e1d3 10px 10px;
+    -webkit-transform: translate(-10px, -10px);
+    -ms-transform: translate(-10px, -10px);
+    transform: translate(-10px, -10px);
+  }
+}
+
+.section-card__items--name {
+  @extend %text-upper;
+  @extend %main-font;
+  @extend %color-dark;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.section-card__items--vocation {
+  @extend %descr-font;
+  @extend %margin;
+}
+
+.section-card__items--image {
+  margin-bottom: 2.6rem;
+  -webkit-transition: -webkit-box-shadow 0.3s linear;
+  transition: -webkit-box-shadow 0.3s linear;
+  -o-transition: box-shadow 0.3s linear;
+  transition: box-shadow 0.3s linear;
+  transition: box-shadow 0.3s linear, -webkit-box-shadow 0.3s linear;
+}
+
+/* OVERLAY */
+
+.overlay {
+  position: absolute;
+  width: 38rem;
+  height: 47rem;
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(243, 129, 129, 0.7)),
+    to(rgba(252, 227, 138, 0.7))
+  );
+  background: -webkit-linear-gradient(rgba(243, 129, 129, 0.7), rgba(252, 227, 138, 0.7));
+  background: -o-linear-gradient(rgba(243, 129, 129, 0.7), rgba(252, 227, 138, 0.7));
+  background: linear-gradient(rgba(243, 129, 129, 0.7), rgba(252, 227, 138, 0.7));
+  display: none;
+}
+
+.overlay__icon-list {
+  @extend %list;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.overlay__icon-list--item {
+  width: 5.6rem;
+  height: 5.6rem;
+  background-color: #fce38a;
+  -webkit-transition: background-color 0.3s linear;
+  -o-transition: background-color 0.3s linear;
+  transition: background-color 0.3s linear;
+
+  &:hover {
+    background-color: $color-red;
+  }
+
+  &:hover .overlay__icon--svg {
+    fill: $color-white;
+  }
+
+  &:not(:last-child) {
+    margin-right: 0.1rem;
+  }
+}
+
+.overlay__icon-list--link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 5.6rem;
+  height: 5.6rem;
+}
+
+.overlay__icon--svg {
+  width: 3.2rem;
+  height: 3.2rem;
+  fill: $color-red;
+}
+
+/* FOOTER */
+.footer {
+  min-height: 6rem;
+  border-top: 1px solid #999999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.footer__text {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.footer__link--author {
+  color: $color-red;
+  display: inline-block;
+
+  &:hover {
+    text-decoration: none;
+    color: $color-hover;
+  }
+}
+
+input[type="email"] {
+  width: 23rem;
+  height: 4rem;
+}
+
+.form__footer--subscribe {
+  @extend %text-upper;
+  font-family: $main-font;
+  width: 15rem;
+  height: 4rem;
+  border: none;
+  color: $color-white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background-color: $color-blue;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.form__footer--email {
+  font-family: $roboto-font;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  font-style: italic;
+  color: $color-descr;
+  border: 1px #e7e7e7 solid;
+}
