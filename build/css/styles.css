@@ -125,10 +125,8 @@ figure,
 
 html {
   line-height: 1.15;
-
   /* 1 */
   -webkit-text-size-adjust: 100%;
-
   /* 2 */
 }
 
@@ -163,13 +161,10 @@ h1 {
 
 hr {
   box-sizing: content-box;
-
   /* 1 */
   height: 0;
-
   /* 1 */
   overflow: visible;
-
   /* 2 */
 }
 
@@ -180,10 +175,8 @@ hr {
 
 pre {
   font-family: monospace, monospace;
-
   /* 1 */
   font-size: 1em;
-
   /* 2 */
 }
 
@@ -205,14 +198,11 @@ a {
 
 abbr[title] {
   border-bottom: none;
-
   /* 1 */
   text-decoration: underline;
-
   /* 2 */
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
-
   /* 2 */
 }
 
@@ -234,10 +224,8 @@ code,
 kbd,
 samp {
   font-family: monospace, monospace;
-
   /* 1 */
   font-size: 1em;
-
   /* 2 */
 }
 
@@ -295,16 +283,12 @@ optgroup,
 select,
 textarea {
   font-family: inherit;
-
   /* 1 */
   font-size: 100%;
-
   /* 1 */
   line-height: 1.15;
-
   /* 1 */
   margin: 0;
-
   /* 2 */
 }
 
@@ -315,7 +299,6 @@ textarea {
 
 button,
 input {
-
   /* 1 */
   overflow: visible;
 }
@@ -327,9 +310,7 @@ input {
 
 button,
 select {
-
   /* 1 */
-
   text-transform: none;
 }
 
@@ -384,22 +365,16 @@ fieldset {
 
 legend {
   box-sizing: border-box;
-
   /* 1 */
   color: inherit;
-
   /* 2 */
   display: table;
-
   /* 1 */
   max-width: 100%;
-
   /* 1 */
   padding: 0;
-
   /* 3 */
   white-space: normal;
-
   /* 1 */
 }
 
@@ -427,10 +402,8 @@ textarea {
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
-
   /* 1 */
   padding: 0;
-
   /* 2 */
 }
 
@@ -450,10 +423,8 @@ textarea {
 
 [type="search"] {
   -webkit-appearance: textfield;
-
   /* 1 */
   outline-offset: -2px;
-
   /* 2 */
 }
 
@@ -472,10 +443,8 @@ textarea {
 
 ::-webkit-file-upload-button {
   -webkit-appearance: button;
-
   /* 1 */
   font: inherit;
-
   /* 2 */
 }
 
@@ -523,8 +492,7 @@ template {
   font-family: "Kaushan Script";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/Kaushan/kaushan-script-v7-latin-regular.woff') format("woff");
-
+  src: url("../fonts/Kaushan/kaushan-script-v7-latin-regular.woff") format("woff");
   /* Modern Browsers */
 }
 
@@ -534,8 +502,7 @@ template {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/Montserrat/montserrat-v12-latin-regular.woff') format("woff");
-
+  src: url("../fonts/Montserrat/montserrat-v12-latin-regular.woff") format("woff");
   /* Modern Browsers */
 }
 
@@ -545,8 +512,7 @@ template {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  src: url('../fonts/Montserrat/montserrat-v12-latin-700.woff') format("woff");
-
+  src: url("../fonts/Montserrat/montserrat-v12-latin-700.woff") format("woff");
   /* Modern Browsers */
 }
 
@@ -556,7 +522,7 @@ template {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
-  src: url('../fonts/Roboto/roboto-v18-latin-300.woff') format("woff");
+  src: url("../fonts/Roboto/roboto-v18-latin-300.woff") format("woff");
 }
 
 /* roboto-regular - latin */
@@ -565,7 +531,7 @@ template {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/Roboto/roboto-v18-latin-regular.woff') format("woff");
+  src: url("../fonts/Roboto/roboto-v18-latin-regular.woff") format("woff");
 }
 
 /* HEADER */
@@ -702,7 +668,7 @@ figure,
 }
 
 .wrapper-header {
-  background-image: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url('../images/Layer 15.png');
+  background-image: linear-gradient(to bottom, rgba(243, 129, 129, 0.9), rgba(252, 227, 138, 0.9)), url("../images/Layer 15.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1225,6 +1191,6 @@ input[type="email"] {
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
   .wrapper-header {
-    background-image: url('../images/Layer 15@2x.png') no-repeat;
+    background-image: url("../images/Layer 15@2x.png") no-repeat;
   }
 }
